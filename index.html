@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyclife Kimathi | E-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="header-inner">
+            <div class="profile-section">
+                <img src="images/profile-photo.jpg" alt="profile picture" class="profile-image">
+                <div class="header-content">
+                    <h1><em>Wyclife Kimathi</em></h1>
+                    <p class="title">Web Developer</p>
+                </div>
+            </div>
+
+                <!-- Audio element: place your MP3 at audio/ambient.mp3 to use a real track -->
+<audio id="ambientAudio" src="audio/ambient.mp3" preload="none"></audio>
+            <!-- header lighting layer -->
+            <div class="header-light" aria-hidden="true"></div>
+        </div>
+        <div class="header-shapes" aria-hidden="true"></div>
+    </div>
+</header>
+
+<!-- Controls strip: moved CTAs and sound control live below header -->
+<div class="controls-strip">
+    <div class="controls-inner">
+        <a class="btn-cta" href="#services">Hire Me</a>
+        <a class="btn-cta" href="#projects">View Projects</a>
+        <a class="btn-cta" href="#contact">Contact</a>
+        <button id="ambientToggle" class="btn-ambient" aria-pressed="false">♪ Ambient: Off</button>
+        <label class="ambient-control">
+            <span class="sr-only">Ambient volume</span>
+            <input id="ambientVol" type="range" min="0" max="100" value="20">
+        </label>
+    </div>
+</div>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Wyclife kimathi is an IT professional specializing in software development, web applications and initiative digital solutions .I blend technical mastery with strategic insight to create seamless ,impactful user experiences and drive projects from project concept to execution.   
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Database Fundamentals (DBMS)</li>
+        <li>Computer Networking</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+</section>
+
+<section id="services">
+    <h2>Website Design Services</h2>
+    <p>Need a professional website? I can help bring your vision to life! Whether you need a simple portfolio, e-commerce site, or a custom web application, I'm here to create the perfect solution for your business.</p>
+    
+    <form id="requestForm" class="request-form">
+        <div class="form-group">
+            <label for="clientName">Your Name *</label>
+            <input type="text" id="clientName" name="clientName" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="clientEmail">Email Address *</label>
+            <input type="email" id="clientEmail" name="clientEmail" required placeholder="your@email.com">
+        </div>
+
+        <div class="form-group">
+            <label for="clientPhone">Phone Number *</label>
+            <input type="tel" id="clientPhone" name="clientPhone" required placeholder="+254 712 345 678">
+        </div>
+
+        <div class="form-group">
+            <label for="businessName">Business/Project Name</label>
+            <input type="text" id="businessName" name="businessName" placeholder="Your business or project name">
+        </div>
+
+        <div class="form-group">
+            <label for="websiteType">What type of website do you need? *</label>
+            <select id="websiteType" name="websiteType" required>
+                <option value="">-- Select an option --</option>
+                <option value="portfolio">Portfolio/Resume Website</option>
+                <option value="ecommerce">E-commerce Store</option>
+                <option value="blog">Blog/Content Site</option>
+                <option value="business">Business Website</option>
+                <option value="corporate">Corporate Website</option>
+                <option value="custom">Custom Web Application</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Describe your website needs *</label>
+            <textarea id="description" name="description" rows="6" required placeholder="Tell me about your project, what features you need, design preferences, target audience, etc."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="timeline">When do you need it completed? *</label>
+            <select id="timeline" name="timeline" required>
+                <option value="">-- Select timeline --</option>
+                <option value="urgent">ASAP (1-2 weeks)</option>
+                <option value="soon">Soon (2-4 weeks)</option>
+                <option value="flexible">Flexible (1-2 months)</option>
+                <option value="not-urgent">Not Urgent (2+ months)</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Request</button>
+    </form>
+
+    <div id="formMessage" class="form-message" style="display: none;"></div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <h3>📧 Email</h3>
+    <p><a href="mailto:kimathiwyclife40@gmail.com">kimathiwyclife40@gmail.com</a></p>
+        </div>
+
+        <div class="contact-item">
+            <h3>📱 Phone</h3>
+            <p><a href="tel:+254715574856">+254 715 574 856</a></p>
+        </div>
+
+        <div class="contact-item">
+            <h3>💻 GitHub</h3>
+            <p><a href="https://github.com/Kimathi2025" target="_blank" rel="noopener">github.com/Kimathi2025</a></p>
+        </div>
+
+        <div class="contact-item">
+            <h3>🎯 Quick Response</h3>
+            <p>I typically respond within 24 hours. For urgent matters, call or text me.</p>
+        </div>
+    </div>
+
+    <h3>Send a quick message</h3>
+    <form id="contactForm" class="request-form">
+        <div class="form-group">
+            <label for="cName">Your Name</label>
+            <input id="cName" name="cName" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+            <label for="cEmail">Your Email</label>
+            <input id="cEmail" name="cEmail" type="email" required placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" name="cMessage" rows="4" required placeholder="Short message"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+
+    <div id="contactMessage" class="form-message" style="display:none;"></div>
+</section>
+
+<footer>
+    <p>© 2026 Wyclife Kimathi</p>
+</footer>
+
+<script>
+// Handle Services request form (opens mail client with prefilled message)
+document.addEventListener('DOMContentLoaded', function () {
+    const svcForm = document.getElementById('requestForm');
+    const svcMsg = document.getElementById('formMessage');
+    if (svcForm) {
+        svcForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const email = document.getElementById('clientEmail').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const biz = document.getElementById('businessName').value.trim();
+            const type = document.getElementById('websiteType').value;
+            const desc = document.getElementById('description').value.trim();
+            const timeline = document.getElementById('timeline').value;
+
+            const subject = encodeURIComponent(`Website request from ${name}`);
+            const bodyLines = [
+                `Name: ${name}`,
+                `Email: ${email}`,
+                `Phone: ${phone}`,
+                `Business/Project: ${biz}`,
+                `Website type: ${type}`,
+                `Timeline: ${timeline}`,
+                '',
+                `Description:`,
+                desc
+            ];
+            const body = encodeURIComponent(bodyLines.join('\n'));
+            // open email client
+            window.location.href = `mailto:kimathiwyclife40@gmail.com?subject=${subject}&body=${body}`;
+
+            // show message on page
+            if (svcMsg) {
+                svcMsg.style.display = 'block';
+                svcMsg.textContent = 'Your request opened in email client — please review and send. Thank you!';
+            }
+            svcForm.reset();
+        });
+    }
+
+    // Smooth tilt interaction on profile-section
+    const profileArea = document.querySelector('.profile-section');
+    if (profileArea) {
+        profileArea.addEventListener('mousemove', (e) => {
+            const rect = profileArea.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            const rx = (y / rect.height) * 10; // tilt amount
+            const ry = (x / rect.width) * -10;
+            profileArea.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+        });
+        profileArea.addEventListener('mouseleave', () => {
+            profileArea.style.transform = '';
+        });
+    }
+
+    // Handle contact form
+    const contactForm = document.getElementById('contactForm');
+    const contactMessage = document.getElementById('contactMessage');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('cName').value.trim();
+            const email = document.getElementById('cEmail').value.trim();
+            const message = document.getElementById('cMessage').value.trim();
+
+            const subject = encodeURIComponent(`Message from ${name}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+            window.location.href = `mailto:kimathiwyclife40@gmail.com?subject=${subject}&body=${body}`;
+
+            contactMessage.style.display = 'block';
+            contactMessage.textContent = 'Message opened in your email client — please review and send.';
+            contactForm.reset();
+        });
+    }
+});
+</script>
+</body>
+</html>
+
+<!-- Ambient: use MP3 if available, otherwise generated pad fallback -->
+<script>
+(function(){
+    let audioCtx = null;
+    let masterGain = null;
+    let filter = null;
+    let voices = [];
+    let wobbleInterval = null;
+    let playing = false;
+    let usingMP3 = false;
+
+    const notes = [110.00, 138.59, 164.81];
+
+    function createContext(){
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        masterGain = audioCtx.createGain();
+        masterGain.gain.value = 0.03;
+        masterGain.connect(audioCtx.destination);
+
+        filter = audioCtx.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.value = 1200;
+        filter.Q = 0.8;
+        filter.connect(masterGain);
+    }
+
+    function startSynth(){
+        if (playing) return;
+        if (!audioCtx) createContext();
+
+        const lfo = audioCtx.createOscillator();
+        const lfoGain = audioCtx.createGain();
+        lfo.type = 'sine'; lfo.frequency.value = 0.06; lfoGain.gain.value = 300;
+        lfo.connect(lfoGain); lfoGain.connect(filter.frequency); lfo.start();
+
+        const now = audioCtx.currentTime;
+        notes.forEach((n,i)=>{
+            const o = audioCtx.createOscillator();
+            o.type = (i===2)?'triangle':'sine';
+            o.frequency.value = n * (1 + (Math.random()-0.5)*0.002);
+            const g = audioCtx.createGain();
+            g.gain.setValueAtTime(0.0001, now);
+            g.gain.linearRampToValueAtTime(0.018, now + 4.0 + i*0.6);
+            o.connect(g); g.connect(filter); o.start(now);
+            voices.push({o,g});
+        });
+
+        wobbleInterval = setInterval(()=>{
+            voices.forEach((v, idx)=>{
+                const shift = 1 + (Math.sin(Date.now()/3000 + idx) * 0.0009);
+                try{ v.o.frequency.setValueAtTime(notes[idx]*shift, audioCtx.currentTime); }catch(e){}
+            });
+        }, 800);
+
+        playing = true; updateButton(true);
+    }
+
+    function stopSynth(){
+        if (!playing || !audioCtx) return;
+        const now = audioCtx.currentTime;
+        voices.forEach(v=>{
+            try{ v.g.gain.cancelScheduledValues(now); v.g.gain.setTargetAtTime(0.0001, now, 0.8); v.o.stop(now + 1.2); }catch(e){}
+        });
+        voices = [];
+        clearInterval(wobbleInterval); wobbleInterval = null;
+        try{ masterGain.disconnect(); }catch(e){}
+        audioCtx = null; playing = false; updateButton(false);
+    }
+
+    function updateButton(on){
+        const b = document.getElementById('ambientToggle'); if (!b) return;
+        b.textContent = on ? '♪ Ambient: On' : '♪ Ambient: Off'; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+
+    function setVolumeFromSlider(){
+        const vol = document.getElementById('ambientVol');
+        const v = Math.max(0, Math.min(1, (vol ? vol.value : 20) / 100));
+        const audioEl = document.getElementById('ambientAudio');
+        if (audioEl && usingMP3){ audioEl.volume = v; }
+        if (masterGain) masterGain.gain.value = Math.max(0.005, v * 0.06);
+    }
+
+    async function tryPlayMP3(){
+        const audioEl = document.getElementById('ambientAudio');
+        if (!audioEl) return false;
+        try{
+            audioEl.currentTime = 0;
+            audioEl.volume = (document.getElementById('ambientVol')?.value || 20) / 100;
+            await audioEl.play();
+            usingMP3 = true; playing = true; updateButton(true);
+            return true;
+        }catch(e){
+            console.error('MP3 play failed:', e);
+            return false;
+        }
+    }
+
+    function stopMP3(){
+        const audioEl = document.getElementById('ambientAudio');
+        if (audioEl){ 
+            try{ audioEl.pause(); audioEl.currentTime = 0; }catch(e){} 
+        }
+        usingMP3 = false; playing = false; updateButton(false);
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+        const btn = document.getElementById('ambientToggle');
+        const vol = document.getElementById('ambientVol');
+        if (vol) vol.addEventListener('input', setVolumeFromSlider);
+
+        if (!btn) return;
+        btn.addEventListener('click', async function(e){
+            e.preventDefault();
+            // try MP3 first
+            if (!playing){
+                const ok = await tryPlayMP3();
+                if (!ok){
+                    // fallback to synth pad
+                    startSynth();
+                    // ensure slider affects synth volume
+                    setVolumeFromSlider();
+                }
+            } else {
+                // stop whichever is playing
+                if (usingMP3) stopMP3(); else stopSynth();
+            }
+        });
+    });
+})();
+</script>
+</body>
+</html>
